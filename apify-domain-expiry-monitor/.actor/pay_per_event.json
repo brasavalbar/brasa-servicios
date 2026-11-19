@@ -1,0 +1,7 @@
+{
+  "domain-checked": {
+    "eventTitle": "Domain checked",
+    "eventDescription": "One domain checked (registration expiry via RDAP and/or TLS certificate) and saved to the dataset.",
+    "eventPriceUsd": 0.003
+  }
+}
