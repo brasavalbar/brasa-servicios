@@ -1,0 +1,10 @@
+{
+  "actorSpecification": 1,
+  "name": "domain-ssl-expiry-monitor",
+  "title": "Domain & SSL Expiry Monitor (RDAP + TLS)",
+  "description": "Bulk-check domain registration expiry (official RDAP) and live TLS certificate expiry. Get days left and ready-to-use alert flags.",
+  "version": "0.1",
+  "buildTag": "latest",
+  "input": "./input_schema.json",
+  "storages": { "dataset": { "actorSpecification": 1, "views": { "overview": { "title": "Expiry overview", "transformation": { "fields": ["domain","alerts","domainDaysLeft","domainExpires","certDaysLeft","certValidTo","registrar"] }, "display": { "component": "table" } } } } }
+}
