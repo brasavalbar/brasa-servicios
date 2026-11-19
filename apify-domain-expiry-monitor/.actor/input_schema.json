@@ -1,0 +1,13 @@
+{
+  "title": "Domain & SSL Expiry Monitor",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "domains": { "title": "Domains", "type": "array", "description": "Domains to check, e.g. example.com (URLs are cleaned automatically).", "editor": "stringList", "prefill": ["example.com", "apify.com"] },
+    "warnDays": { "title": "Warn when days left <=", "type": "integer", "description": "Raise *_EXPIRES_SOON alerts at or below this many days.", "default": 30, "minimum": 1, "maximum": 365 },
+    "checkRdap": { "title": "Check domain expiry (RDAP)", "type": "boolean", "default": true },
+    "checkTls": { "title": "Check TLS certificate (port 443)", "type": "boolean", "default": true },
+    "onlyAlerts": { "title": "Only output domains with alerts", "type": "boolean", "description": "Only domains with alerts are output and charged. Useful for scheduled runs + webhooks.", "default": false }
+  },
+  "required": ["domains"]
+}
