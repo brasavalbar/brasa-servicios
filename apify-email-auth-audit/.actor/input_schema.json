@@ -1,0 +1,10 @@
+{
+  "title": "Email Authentication Audit",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "domains": { "title": "Domains", "type": "array", "description": "Domains (or email addresses / URLs, they are cleaned) to audit.", "editor": "stringList", "prefill": ["google.com", "example.com"] },
+    "checkDkim": { "title": "Probe common DKIM selectors", "type": "boolean", "description": "DKIM selectors are not discoverable by design; this probes ~14 common ones (google, selector1, selector2, default, k1, s1...). Absence does not prove DKIM is missing.", "default": true }
+  },
+  "required": ["domains"]
+}
