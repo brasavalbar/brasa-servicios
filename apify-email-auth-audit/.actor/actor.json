@@ -1,0 +1,10 @@
+{
+  "actorSpecification": 1,
+  "name": "email-auth-audit",
+  "title": "Email Authentication Audit: SPF, DKIM, DMARC (bulk)",
+  "description": "Bulk-audit domains for SPF, DMARC, DKIM, MTA-STS and BIMI using public DNS. Returns a 0-100 score and issue flags such as DMARC_MISSING or SPF_OVER_10_LOOKUPS.",
+  "version": "0.1",
+  "buildTag": "latest",
+  "input": "./input_schema.json",
+  "storages": { "dataset": { "actorSpecification": 1, "views": { "overview": { "title": "Audit overview", "transformation": { "fields": ["domain","score","issues","spf.policy","dmarc.policy","mtaSts","bimi"] }, "display": { "component": "table" } } } } }
+}
