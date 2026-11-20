@@ -1,0 +1,7 @@
+{
+  "domain-audited": {
+    "eventTitle": "Domain audited",
+    "eventDescription": "One domain audited for SPF, DMARC, DKIM (common selectors), MTA-STS and BIMI.",
+    "eventPriceUsd": 0.005
+  }
+}
