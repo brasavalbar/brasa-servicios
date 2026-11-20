@@ -1,0 +1,10 @@
+{
+  "name": "email-auth-audit",
+  "version": "0.1.0",
+  "description": "Apify Actor: bulk SPF / DKIM / DMARC / MTA-STS / BIMI audit via public DNS",
+  "main": "src/main.js",
+  "scripts": { "start": "node src/main.js" },
+  "license": "MIT",
+  "dependencies": { "apify": "^3.8.0" },
+  "type": "module"
+}
